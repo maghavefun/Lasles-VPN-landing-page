@@ -11,7 +11,7 @@
     <title>LaslesVPN</title>
     <link rel="icon" type="img/png" href="/images/site__ico.png" sizes="16x16">
     <link rel="icon" type="img/png" href="/images/site__ico.png" sizes="32x32">
-    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="/CSS/styles.min.css">
 </head>
 <body>
     <header class="header">
@@ -25,21 +25,25 @@
                 </div>
                 <nav class="header_nav">
                     <ul class="nav-menu">
-                        <li class="nav-item"><a href="#" class="nav-item-link About">About</a></li>
-                        <li class="nav-item"><a href="#features" class="nav-item-link Features">Features</a></li>
-                        <li class="nav-item"><a href="#plan" class="nav-item-link Pricing">Pricing</a></li>
-                        <li class="nav-item"><a href="#" class="nav-item-link Testimonials">Testimonials</a></li>
-                        <li class="nav-item"><a href="#" class="nav-item-link Help">Help</a></li>
+                        <li class="nav-item"><a href="#!" class="nav-item-link About">About</a></li>
+                        <li class="nav-item"><a href="#features" class="nav-item-link">Features</a></li>
+                        <li class="nav-item"><a href="#plans" class="nav-item-link">Pricing</a></li>
+                        <li class="nav-item"><a href="#testimonials" class="nav-item-link">Testimonials</a></li>
+                        <li class="nav-item"><a href="#!" class="nav-item-link">Help</a></li>
+                        <li class="authorization__list">
+                                <a href="#!" class="sign-in">Sign In</a>
+                                <a href="#!" class="sign-up">Sign Up</a>
+                        </li>
                     </ul>
                     <div class="close_header_nav">
                         <span class="close_mark"></span>
                         <span class="close_mark"></span>
                     </div>
                 </nav>
-                <form action="#" class="authorization">
-                    <button class="sign-in">Sign In</button>
-                    <button class="sign-up">Sign Up</button>
-                </form>
+                <div class="authorization">
+                    <a href="#!" class="sign-in">Sign In</a>
+                    <a href="#!" class="sign-up">Sign Up</a>
+                </div>
 
                 <div class="burger_menu">
                     <span class="burger_line"></span>
@@ -86,7 +90,6 @@
         </div>
     </section>
 
-
     <section id="features" class="wrapper2 features">
         <img src="/images/feature-picture.jpg" alt="Man with a laptop sits with a raised hand" class="features-pic">
         <div class="features-text">
@@ -102,7 +105,7 @@
     </section>
 
 
-    <section id="plan" class="wrapper2 plans-section">
+    <section id="plans" class="wrapper2 plans-section">
             <h2 class="plans-header">Choose Your Plan</h2>
             <p class="plans-description">Let's choose the package that is best for you and explore it happily and cheerfully.</p>
             <div class="plans">
@@ -176,7 +179,7 @@
         <img src="/images/SVG/spotify-logo.svg" alt="Spotify logo" class="spotify">
     </div>
 
-    <section class="customer-recalls">
+    <section class="customer-recalls" id="testimonials">
         <h2 class="customer-recalls-header">Trusted by Thousands of Happy Customer</h2>
         <p class="customer-recalls-description">These are the stories of our customers who have joined us with great pleasure when using this crazy feature.</p>
         <div class="customer-messages-block">

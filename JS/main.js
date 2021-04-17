@@ -13,26 +13,27 @@
     const burger = document.querySelector('.burger_menu');
     const menu = document.querySelector('.header_nav');
     const menuClose = document.querySelector('.close_header_nav');
+    const menuLinks = document.querySelectorAll('.nav-item-link')
     burger.addEventListener('click', () => {
         menu.classList.add("header_nav_active");
     });
     menuClose.addEventListener('click', () => {
         menu.classList.remove("header_nav_active");
     });
+    
+    if (window.innerWidth < 979) {
+        for (let i = 0; i < menuLinks.length; i = i + 1) {
+            menuLinks[i].addEventListener('click' , () => {
+                menu.classList.remove("header_nav_active");
+            }
+            );
+        }
+    }
 }());
 (function () {
-    const navLinkAbout = document.querySelector('.nav-item-link');
-    const navLinkFeatures = document.querySelector('.Features');
-    const navLinkPricing = document.querySelector('.Pricing');
-    const navLinkTestimonials = document.querySelector('.Testimonials');
-    const navLinkHelp = document.querySelector('.Help');
+    const navLink = document.querySelectorAll('.nav-item-link');
     const menu = document.querySelector('.header_nav');
-    navLinkAbout.addEventListener('click', () => {
+    navLink.addEventListener('click', () => {
         menu.classList.remove("header_nav_active");
-
     });
-    navLinkFeatures.addEventListener('click', () => {
-        menu.classList.remove("header_nav-active");
-    });
-    
 }());
