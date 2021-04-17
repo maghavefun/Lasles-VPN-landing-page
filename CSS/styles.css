@@ -598,8 +598,8 @@ a {
     display: grid;
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: repeat(2,1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    column-gap: 20px;
+    row-gap: 20px;
 }
 .intro-header {
     font-size: 50px;
@@ -694,7 +694,7 @@ a {
     display: grid;
     -ms-grid-columns: 1fr 150px 1fr;
     grid-template-columns: repeat(2,1fr);
-    grid-column-gap: 150px;
+    column-gap: 150px;
 }
 .features-pic {
     max-width: 508px;
@@ -755,8 +755,8 @@ a {
     display: grid;
     -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
     grid-template-columns: repeat(3,1fr);
-    grid-column-gap: 30px;
-    grid-row-gap: 20px;
+    column-gap: 30px;
+    row-gap: 20px;
 }
 .free-plan-block, .standard-plan-block, .premium-plan-block {
     -ms-grid-column-span: 1;
@@ -954,8 +954,8 @@ a {
     display: grid;
     -ms-grid-rows: 1fr 20px 2fr;
     grid-template-rows: 1fr 2fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    column-gap: 20px;
+    row-gap: 20px;
     border: 2px solid #DDDDDD;
     border-radius: 10px;
     max-width: 400px;
@@ -1203,7 +1203,7 @@ footer {
  /* media starts */
 @media screen and (max-width: 1292px) {
     .features {
-        grid-column-gap: 50px;
+        column-gap: 50px;
     }
     .customer-recall {
         margin: 0 20px 20px 20px;
@@ -1541,7 +1541,7 @@ footer {
     }
     .customer-recall {
         height: auto;
-        grid-row-gap: 50px;
+        row-gap: 50px;
     }
     .customer-recall:last-child {
         margin: 0 20px 20px;
